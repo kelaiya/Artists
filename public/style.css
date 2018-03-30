@@ -11,20 +11,29 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+.loogo1{
+  height: 30px;
+}
+.loogo2{
+  height: 50px;
+  margin: 10px;
+}
 .title{
   display: flex;
   justify-content: center;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  color: #163a73;
-  background-color: #ffffff;
+  font-family: Optima, sans-serif;
+  color: #fffbc8;
+  font-size: 30px;
+  background-color: #000000;
+  align-items: center;
 }
 .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #3e617b;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+}
   .labelinput{
   	display: flex;
     flex-direction: row;
@@ -32,31 +41,33 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: black;
+    color: #d8b549;
   }
   .input {
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     margin-left: 30px;
-    height: 25px;
-    border: 1px solid #020202;
+    height: 35px;
+    border: 1px solid #dedbdb;
     border-radius: 4px;
-    width: 300px;
+    width: 200px;
     padding: 2px;
-    background-color: #ffffff;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #d0cdc7;
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+
 	}
 	.label{
-	    display: flex;
-	    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    display: flex;
+    font-size: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 	 }
 
   .button{
     height: 40px;
     width: 80px;
-    color: #000000;
+    color: #d8b549;
     font-size: 16px;
-    border: 1px solid #020202;
+    border: 1px solid #dedbdb;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -70,20 +81,23 @@ body {
     background-color: grey;
     color: light blue;
   }
+  .imagesMain{
+    background-color: #3e1717;
+    height: 100vh;
+  }
   .result1{
   	display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #3e1717;
   }
   .result2{
   	display: flex;
     height: 300px;
     flex-direction: column;
-    background-color: #f1edea;
     margin-bottom: 30px;
     margin-top: 20px;
-    width: 250px;
+    width: 300px;
     margin-left: 12px;
     margin-right: 12px;
     flex-wrap: wrap;
@@ -102,19 +116,26 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 15px;
+    color: #bfae8d;
   }
-
+  .singer{
+    font-size: 50px;
+    display: flex;
+    color: #dacf90;
+    justify-content: center;
+    font-family: Optima, sans-serif;
+  }
   .cover{
     display: flex;
     justify-content: center;
   }
   .dropbtn {
-    background-color: #1e588c;
-    color: white;
+    background-color: #f7f7f7;
+    color: #d8b549;
     font-size: 16px;
     height: 50px;
     width: 100px;
-    border: none;
+    border: 1px solid #dedbdb;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -129,16 +150,19 @@ body {
     display: none;
     position: absolute;
     background-color: #968b7d;
-    max-width: 300px;
+    min-width: 200px;
     border-radius: 4px;
+    height: 120px;
     box-shadow: inset 0px 8px 16px 0px rgba(119, 110, 67, 0.2);
     z-index: 1;
+}
 }
 
 .dropdown-content h3 {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
+    font-size: 12px;
     display: block;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -155,3 +179,14 @@ body {
 .drop{
   font-size: 15px;
 }
+
+@media screen and (max-width:959px){
+    .title{
+      width: 100%;
+      margin: 0;
+      font-size: 10px;
+    }
+    .singer{
+      font-size: 10px;
+    }
+  }

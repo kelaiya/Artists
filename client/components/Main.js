@@ -47,7 +47,11 @@ export default class Main extends Component {
     return (
             <div className="container">
               <div className="title"> 
-                <h1 className="h1"> Search Your Favorite Artist </h1>
+                <img className="loogo1" src="/button2.png" />
+                
+                <h1 className="h1"> Artistry </h1>
+                
+                <img className="loogo1" src="/button1.png" />
               </div>
                 <form className="form" onSubmit={this.handleSubmit}>
                   <div className="labelinput">
@@ -59,7 +63,10 @@ export default class Main extends Component {
 
                 <div className="imagesMain">
                 {
-                  (information.length > 0) ? <div className="result1"> {
+                  (information.length > 0) ? <div className="result3"> 
+                  <h1 className="singer">{this.state.artist}</h1>
+                  <div className="result1">
+                  {
                     information.map((info, index) => {
                       return(
                         <div key={index} className="result2">
@@ -67,7 +74,7 @@ export default class Main extends Component {
                           <h3 className="name"> Album : {info.collectionName}</h3>
                           <div className="cover">
                             <div class="dropdown">
-                              <button class="dropbtn">Dropdown</button>
+                              <button class="dropbtn">More Info</button>
                               <div class="dropdown-content">
                                 <h3 className="drop">Release date: {(info["releaseDate"]).slice(0, 10)}</h3>
                                 <h3 className="drop">Track count: {info.trackCount}</h3>
@@ -78,7 +85,7 @@ export default class Main extends Component {
                       )
                     })
                   }
-                  </div> : <h1 />
+                  </div></div> : <h1 />
                 }
               </div>
               
