@@ -9,10 +9,13 @@ export default class Main extends Component {
     super()
     this.state = {
       artist: "",
-      data: []
+      data: [],
+      subInfo:{},
+      show: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    
   }
 
   handleChange(event){
@@ -34,9 +37,13 @@ export default class Main extends Component {
      
   }
 
+
   render(){
     var information = this.state.data;
+    var details = this.state,subInfo
     console.log("info", information)
+    console.log("detail", details)
+
     return (
             <div className="container">
               <div className="title"> 
@@ -49,14 +56,24 @@ export default class Main extends Component {
                   </div>
                   <button type="submit" className="button"> Search </button>
                 </form>
+
                 <div className="imagesMain">
                 {
                   (information.length > 0) ? <div className="result1"> {
                     information.map((info, index) => {
                       return(
                         <div key={index} className="result2">
-                          <img className="image" src = {info.artworkUrl100} />
-                          <h3 className="name"> Album : {info.trackName}</h3>
+                          <a href={info.trackViewUrl} target="_blank"><img className="image" src = {info.artworkUrl100} /></a>
+                          <h3 className="name"> Album : {info.collectionName}</h3>
+                          <div className="cover">
+                            <div class="dropdown">
+                              <button class="dropbtn">Dropdown</button>
+                              <div class="dropdown-content">
+                                <h3 className="drop">Release date: {(info["releaseDate"]).slice(0, 10)}</h3>
+                                <h3 className="drop">Track count: {info.trackCount}</h3>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       )
                     })
@@ -64,6 +81,7 @@ export default class Main extends Component {
                   </div> : <h1 />
                 }
               </div>
+              
             </div>
           )
     }

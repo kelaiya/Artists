@@ -15,21 +15,24 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  color: #babb96;
-  margin-bottom: 35px;
-  background: linear-gradient(#dea857, #0e0e0e)
+  color: #163a73;
+  background-color: #ffffff;
 }
 .form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #3e617b;
   }
   .labelinput{
   	display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
   }
   .input {
     font-size: 16px;
@@ -58,6 +61,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     text-decoration: none;
 	}
@@ -66,15 +70,88 @@ body {
     background-color: grey;
     color: light blue;
   }
-
+  .result1{
+  	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffffff;
+  }
   .result2{
   	display: flex;
-  	flex-direction: column;
+    height: 300px;
+    flex-direction: column;
+    background-color: #f1edea;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 250px;
+    margin-left: 12px;
+    margin-right: 12px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
   }
   .image{
   	height: 120px;
-  	width: 120px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .name{
   	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
   }
+
+  .cover{
+    display: flex;
+    justify-content: center;
+  }
+  .dropbtn {
+    background-color: #1e588c;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #968b7d;
+    max-width: 300px;
+    border-radius: 4px;
+    box-shadow: inset 0px 8px 16px 0px rgba(119, 110, 67, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content h3 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.dropdown-content h3:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: cream;
+}
+.drop{
+  font-size: 15px;
+}
