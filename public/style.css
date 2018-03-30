@@ -3,5 +3,78 @@ body {
    margin-top: 0px;
    margin-right: 0px;
    margin-bottom: 0px;
-   margin-left: 0px
+   margin-left: 0px;
 }
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #babb96;
+  margin-bottom: 35px;
+  background: linear-gradient(#dea857, #0e0e0e)
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .labelinput{
+  	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .input {
+    font-size: 16px;
+    display: flex;
+    margin-left: 30px;
+    height: 25px;
+    border: 1px solid #020202;
+    border-radius: 4px;
+    width: 300px;
+    padding: 2px;
+    background-color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	}
+	.label{
+	    display: flex;
+	    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	 }
+
+  .button{
+    height: 40px;
+    width: 80px;
+    color: #000000;
+    font-size: 16px;
+    border: 1px solid #020202;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-decoration: none;
+	}
+
+  .button:hover {
+    background-color: grey;
+    color: light blue;
+  }
+
+  .result2{
+  	display: flex;
+  	flex-direction: column;
+  }
+  .image{
+  	height: 120px;
+  	width: 120px;
+  }
+  .name{
+  	font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
