@@ -4,6 +4,7 @@ body {
    margin-right: 0px;
    margin-bottom: 0px;
    margin-left: 0px;
+   background-color: black;
 }
 
 .container{
@@ -126,6 +127,28 @@ body {
     color: #dacf90;
     justify-content: center;
     font-family: Optima, sans-serif;
+  }
+  .page-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #3e1717;
+  }
+  .page-button{
+    background-color: #f7f7f7;
+    color: #d8b549;
+    margin: 10px;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #dedbdb;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+  }
+  .page-button:hover {
+    background-color: black;
+    color: light blue;
   }
   .cover{
     display: flex;
