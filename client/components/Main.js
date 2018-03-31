@@ -51,7 +51,7 @@ export default class Main extends Component {
                 
                 <h1 className="h1"> Artistry </h1>
                 
-                <img className="loogo1" src="/button1.png" />
+                <img className="loogo1" src="/button2.png" />
               </div>
                 <form className="form" onSubmit={this.handleSubmit}>
                   <div className="labelinput">
@@ -60,7 +60,6 @@ export default class Main extends Component {
                   </div>
                   <button type="submit" className="button"> Search </button>
                 </form>
-
                 <div className="imagesMain">
                 {
                   (information.length > 0) ? <div className="result3"> 
