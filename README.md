@@ -8,6 +8,7 @@
 * User can play the songs by clicking on album image.
 * User can also see all information like the release date and number of tracks in the albums by hovering on 'More Info' button.
 * Albums were divided in different pages for convience. 
+* Added favicon.
 
 ## Start
 * npm install
