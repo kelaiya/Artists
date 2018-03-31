@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Show from './Show'
+import Show from './Show';
+import { ClipLoader } from 'react-spinners';
 
 //artist state will have name of the artist that user wants to search
 //data state is all the data of that particular artist
@@ -10,7 +11,8 @@ export default class Main extends Component {
     super()
     this.state = {
       artist: "",
-      data: []
+      data: [],
+      loading: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this) 
@@ -26,9 +28,10 @@ export default class Main extends Component {
   //This function will fetch data from iTunes using axios on iTunes API 
   handleSubmit(event){
     event.preventDefault()
+    this.setState({loading: true})
     axios.get(`https://itunes.apple.com/search?term=${this.state.artist}`)
     .then(res =>{
-      this.setState({data: res.data.results})
+      this.setState({data: res.data.results, loading: false})
     })
   }
   
@@ -48,6 +51,7 @@ export default class Main extends Component {
               <label className="label"> Artist's Name </label>     
               <input className="input" type="text" onChange={this.handleChange} placeholder="Name"/>
             </div>
+            <ClipLoader color={'#123abc'} loading={this.state.loading} />
             <button type="submit" className="button"> Search </button>
           </form>
           <div className="imagesMain">

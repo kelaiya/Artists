@@ -12,6 +12,7 @@ export default class Show extends Component {
     this.handleClick = this.handleClick.bind(this) 
   }
 
+  // This function will change the page
   handleClick(event) {
     this.setState({
       currentPage: Number(event.target.id)

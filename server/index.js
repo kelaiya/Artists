@@ -2,16 +2,12 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
-const bodyParser = require('body-parser');
 module.exports = app;
-
-// body parsing middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Static file-serving middleware
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
+// logging middleware
 app.use(morgan('dev'));
 
 // Sends index.html

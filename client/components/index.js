@@ -1,4 +1,4 @@
 //Exporting all the components
 
-export {default as Main} from './Main'
-export {default as Show} from './Show'
+export {default as Main} from './Main';
+export {default as Show} from './Show';

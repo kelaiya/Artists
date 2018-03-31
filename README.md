@@ -24,4 +24,4 @@
 * Webpack
 
 ## Note
-* I used React in making this web app but I can also make it using React-Redux. I just feel like Redux is not needed here so i didn't use it. I feel in using least libraries and making things happen!
+* I used React in making this web app but I can also make it using React-Redux. I just feel like Redux is not needed here so I didn't use it. I believe in using least libraries and making great things happen!
