@@ -1,3 +1,4 @@
+// The pathname will be saved using history
 import createHistory from 'history/createBrowserHistory'
 import createMemoryHistory from 'history/createMemoryHistory'
 

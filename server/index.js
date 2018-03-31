@@ -2,8 +2,8 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
-module.exports = app;
 const bodyParser = require('body-parser');
+module.exports = app;
 
 // body parsing middleware
 app.use(bodyParser.json());

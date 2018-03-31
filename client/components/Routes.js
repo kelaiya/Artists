@@ -7,6 +7,8 @@ import history from '../history'
 /**
  * COMPONENT
  */
+
+ //We can specify path of all the components. In our case, its just one as we just have one main component
 export default class Routes extends Component {
   render () {
     return (
